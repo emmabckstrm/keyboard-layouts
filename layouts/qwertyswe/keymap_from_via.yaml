@@ -1,0 +1,65 @@
+layout: {qmk_keyboard: crkbd/r2g, qmk_layout: LAYOUT_split_3x6_3}
+layers:
+  L0:
+  - [TAB, Q, W, E, R, T, Y, U, I, O]
+  - [P, BSPC, LCTL, A, S, D, F, G, H, J]
+  - [K, L, \, Sft+ =, LSFT, Z, X, C, V, B]
+  - - N
+    - M
+    - ','
+    - .
+    - /
+    - ESC
+    - LALT
+    - LGUI
+    - {t: SPC, h: L3}
+    - {t: ENT, h: L2}
+  - [L1, ESC]
+  L1:
+  - ['-', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+  - ['0', BSPC, LCTL, '', '`', Sft+ `, '-', ']', LEFT, DOWN]
+  - [UP, RGHT, '[', '[', LSFT, '', '', '', '', '']
+  - - ;
+    - ''''
+    - '['
+    - ;
+    - ''''
+    - ''''
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - SPC
+    - ENT
+  - - {type: held}
+    - {t: ▽, type: trans}
+  L2:
+  - [TAB, '', '7', '8', '9', '', '', '', '[', '']
+  - ['[', BSPC, LCTL, '', '4', '5', '6', MACRO(0), '', ;]
+  - ['''', ;, '''', '', LSFT, '', '1', '2', '3', '']
+  - - MACRO(1)
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: SPC, h: L2}
+    - {t: ENT, type: held}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  L3:
+  - [RESET, '', '', '', '', MS WH DOWN, MPRV, MPLY, MNXT, VOLD]
+  - [VOLU, MUTE, RGB MOD, RGB HUI, RGB VAI, MS BTN3, MS BTN2, MS BTN1, MS LEFT, MS DOWN]
+  - [MS UP, MS RIGHT, MS WH DOWN, '', RGB TOG, RGB HUD, RGB VAD, '', '', MS WH UP]
+  - - MS BTN1
+    - MS BTN2
+    - MS BTN3
+    - ''
+    - MS WH UP
+    - ESC
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: SPC, type: held}
+    - ENT
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
