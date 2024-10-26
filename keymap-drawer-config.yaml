@@ -1,0 +1,171 @@
+draw_config:
+  key_w: 60.0
+  key_h: 56.0
+  split_gap: 30.0
+  combo_w: 28.0
+  combo_h: 26.0
+  key_rx: 6.0
+  key_ry: 6.0
+  dark_mode: false
+  n_columns: 1
+  separate_combo_diagrams: false
+  combo_diagrams_scale: 2
+  inner_pad_w: 2.0
+  inner_pad_h: 2.0
+  outer_pad_w: 30.0
+  outer_pad_h: 56.0
+  line_spacing: 1.2
+  arc_radius: 6.0
+  append_colon_to_layer_header: true
+  small_pad: 2.0
+  legend_rel_x: 0.0
+  legend_rel_y: 0.0
+  draw_key_sides: false
+  key_side_pars:
+    rel_x: 0
+    rel_y: 4
+    rel_w: 12
+    rel_h: 12
+    rx: 4
+    ry: 4
+  svg_extra_style: ''
+  footer_text: ''
+  shrink_wide_legends: 7
+  style_layer_activators: true
+  glyph_tap_size: 14
+  glyph_hold_size: 12
+  glyph_shifted_size: 10
+  glyphs: {}
+parse_config:
+  preprocess: true
+  skip_binding_parsing: false
+  raw_binding_map: {
+    "S(KC_GRV)": ">"
+  }
+  sticky_label: sticky
+  toggle_label: toggle
+  tap_toggle_label: tap-toggle
+  trans_legend:
+    t: ▽
+    type: trans
+  mark_alternate_layer_activators: false
+  modifier_fn_map:
+    left_ctrl: Ctl
+    right_ctrl: Ctl
+    left_shift: Sft
+    right_shift: Sft
+    left_alt: Alt
+    right_alt: AGr
+    left_gui: Gui
+    right_gui: Gui
+    keycode_combiner: '{mods}+ {key}'
+    mod_combiner: '{mod_1}+{mod_2}'
+    special_combinations:
+      left_ctrl+left_alt+left_gui+left_shift: Hyper
+      left_ctrl+left_alt+left_shift: Meh
+  qmk_keycode_map:
+    '1':
+      tap: 1
+      shifted: '!'
+    '0':
+      tap: 0
+      shifted: '='
+    # custom changes to adapt to swedish/ISO
+    BSLS: ''''
+    BACKSLASH: ''''
+    LEFT_BRACKET: 'Å'
+    LBRC: 'Å'
+    SEMICOLON: 'Ö'
+    SCLN: 'Ö'
+    QUOTE: 'Ä'
+    QUOT: 'Ä'
+    SLASH: '-'
+    SLSH: '-'
+    GRAVE: '<'
+    GRV: '<'
+    EQUAL: 
+      tap: "´"
+      shifted: "`"
+    EQL: 
+      tap: "´"
+      shifted: "`"
+    MINUS: 
+      tap: '+'
+      shifted: '?'
+    MINS: 
+      tap: '+'
+      shifted: '?'
+    RIGHT_BRACKET: '¨'
+    RBRC: '¨'
+    # icons
+    TAB: $$mdi:keyboard-tab$$
+    BACKSPACE:
+      type: backspace
+      tap: $$mdi:backspace$$
+    BSPC:
+      type: backspace
+      tap: $$mdi:backspace$$
+
+    LEFT: $$mdi:arrow-left-bold$$
+    RIGHT: $$mdi:arrow-right-bold$$
+    RGHT: $$mdi:arrow-right-bold$$
+    UP: $$mdi:arrow-up-bold$$
+    DOWN: $$mdi:arrow-down-bold$$
+
+    MPLY: $$mdi:play-pause$$
+    MPRV: $$mdi:skip-previous$$
+    MNXT: $$mdi:skip-next$$
+    MUTE: $$mdi:volume-off$$
+    VOLU: $$mdi:volume-high$$
+    VOLD: $$mdi:volume-low$$
+
+    ################# end
+
+    XXXXXXX: ''
+    'NO': ''
+    NONUS_HASH: '#'
+    NUHS: '#'
+    COMMA: ','
+    COMM: ','
+    DOT: .
+    TILDE: '~'
+    TILD: '~'
+    EXCLAIM: '!'
+    EXLM: '!'
+    AT: '@'
+    HASH: '#'
+    DOLLAR: $
+    DLR: $
+    PERCENT: '%'
+    PERC: '%'
+    CIRCUMFLEX: ^
+    CIRC: ^
+    AMPERSAND: '&'
+    AMPR: '&'
+    ASTERISK: '*'
+    ASTR: '*'
+    LEFT_PAREN: (
+    LPRN: (
+    RIGHT_PAREN: )
+    RPRN: )
+    UNDERSCORE: _
+    UNDS: _
+    PLUS: +
+    LEFT_CURLY_BRACE: '{'
+    LCBR: '{'
+    RIGHT_CURLY_BRACE: '}'
+    RCBR: '}'
+    PIPE: '|'
+    COLON: ':'
+    COLN: ':'
+    DOUBLE_QUOTE: '"'
+    DQUO: '"'
+    DQT: '"'
+    LEFT_ANGLE_BRACKET: <
+    LABK: <
+    LT: <
+    RIGHT_ANGLE_BRACKET: '>'
+    RABK: '>'
+    GT: '>'
+    QUESTION: '?'
+    QUES: '?'

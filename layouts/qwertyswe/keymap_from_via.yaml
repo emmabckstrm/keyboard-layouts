@@ -1,14 +1,32 @@
 layout: {qmk_keyboard: crkbd/r2g, qmk_layout: LAYOUT_split_3x6_3}
 layers:
   L0:
-  - [TAB, Q, W, E, R, T, Y, U, I, O]
-  - [P, BSPC, LCTL, A, S, D, F, G, H, J]
-  - [K, L, \, Sft+ =, LSFT, Z, X, C, V, B]
+  - ['$$mdi:keyboard-tab$$', Q, W, E, R, T, Y, U, I, O]
+  - - P
+    - {t: '$$mdi:backspace$$', type: backspace}
+    - LCTL
+    - A
+    - S
+    - D
+    - F
+    - G
+    - H
+    - J
+  - - K
+    - L
+    - ''''
+    - {t: ´, s: '`'}
+    - LSFT
+    - Z
+    - X
+    - C
+    - V
+    - B
   - - N
     - M
     - ','
     - .
-    - /
+    - '-'
     - ESC
     - LALT
     - LGUI
@@ -16,15 +34,33 @@ layers:
     - {t: ENT, h: L2}
   - [L1, ESC]
   L1:
-  - ['-', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-  - ['0', BSPC, LCTL, '', '`', Sft+ `, '-', ']', LEFT, DOWN]
-  - [UP, RGHT, '[', '[', LSFT, '', '', '', '', '']
-  - - ;
-    - ''''
-    - '['
-    - ;
-    - ''''
-    - ''''
+  - - {t: +, s: '?'}
+    - {t: '1', s: '!'}
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    - '7'
+    - '8'
+    - '9'
+  - - {t: '0', s: '='}
+    - {t: '$$mdi:backspace$$', type: backspace}
+    - LCTL
+    - ''
+    - <
+    - '>'
+    - {t: +, s: '?'}
+    - ¨
+    - $$mdi:arrow-left-bold$$
+    - $$mdi:arrow-down-bold$$
+  - ['$$mdi:arrow-up-bold$$', '$$mdi:arrow-right-bold$$', Å, Å, LSFT, '', '', '', '', '']
+  - - Ö
+    - Ä
+    - Å
+    - Ö
+    - Ä
+    - Ä
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - SPC
@@ -32,9 +68,27 @@ layers:
   - - {type: held}
     - {t: ▽, type: trans}
   L2:
-  - [TAB, '', '7', '8', '9', '', '', '', '[', '']
-  - ['[', BSPC, LCTL, '', '4', '5', '6', MACRO(0), '', ;]
-  - ['''', ;, '''', '', LSFT, '', '1', '2', '3', '']
+  - ['$$mdi:keyboard-tab$$', '', '7', '8', '9', '', '', '', Å, '']
+  - - Å
+    - {t: '$$mdi:backspace$$', type: backspace}
+    - LCTL
+    - ''
+    - '4'
+    - '5'
+    - '6'
+    - MACRO(0)
+    - ''
+    - Ö
+  - - Ä
+    - Ö
+    - Ä
+    - ''
+    - LSFT
+    - ''
+    - {t: '1', s: '!'}
+    - '2'
+    - '3'
+    - ''
   - - MACRO(1)
     - ''
     - ''
@@ -48,8 +102,8 @@ layers:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   L3:
-  - [RESET, '', '', '', '', MS WH DOWN, MPRV, MPLY, MNXT, VOLD]
-  - [VOLU, MUTE, RGB MOD, RGB HUI, RGB VAI, MS BTN3, MS BTN2, MS BTN1, MS LEFT, MS DOWN]
+  - [RESET, '', '', '', '', MS WH DOWN, '$$mdi:skip-previous$$', '$$mdi:play-pause$$', '$$mdi:skip-next$$', '$$mdi:volume-low$$']
+  - ['$$mdi:volume-high$$', '$$mdi:volume-off$$', RGB MOD, RGB HUI, RGB VAI, MS BTN3, MS BTN2, MS BTN1, MS LEFT, MS DOWN]
   - [MS UP, MS RIGHT, MS WH DOWN, '', RGB TOG, RGB HUD, RGB VAD, '', '', MS WH UP]
   - - MS BTN1
     - MS BTN2
