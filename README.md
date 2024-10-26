@@ -2,9 +2,14 @@
 
 This repository is the version history of my keyboard layout(s).
 
-If nothing else stated, I manage my layout with VIA ([https://usevia.app](https://usevia.app/))
+If nothing else stated, I manage my layout with VIA.
 
 ## Resources
+
+- [VIA GUI (needs to be used in Chrome)](https://usevia.app/)
+- [QMK basic keycodes](https://docs.qmk.fm/keycodes)
+- QMK advanced keycodes:
+  - [Mod-Tap](https://docs.qmk.fm/mod_tap)
 
 Keymap from VIA. Converted to YAML through:
 
