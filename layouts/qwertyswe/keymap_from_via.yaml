@@ -4,7 +4,7 @@ layers:
   - ['$$mdi:keyboard-tab$$', Q, W, E, R, T, Y, U, I, O]
   - - P
     - {t: '$$mdi:backspace$$', type: backspace}
-    - LCTL
+    - $$mdi:apple-keyboard-control$$
     - A
     - S
     - D
@@ -14,9 +14,9 @@ layers:
     - J
   - - K
     - L
-    - ''''
+    - {t: '''', s: '*'}
     - {t: ´, s: '`'}
-    - LSFT
+    - $$mdi:apple-keyboard-shift$$
     - Z
     - X
     - C
@@ -24,37 +24,37 @@ layers:
     - B
   - - N
     - M
-    - ','
-    - .
-    - '-'
+    - {t: ',', s: ;}
+    - {t: ., s: ':'}
+    - {t: '-', s: __}
     - ESC
-    - LALT
-    - LGUI
+    - $$mdi:apple-keyboard-option$$
+    - $$mdi:apple-keyboard-command$$
     - {t: SPC, h: L3}
-    - {t: ENT, h: L2}
+    - {t: '$$mdi:keyboard-return$$', h: L2}
   - [L1, ESC]
   L1:
   - - {t: +, s: '?'}
     - {t: '1', s: '!'}
-    - '2'
-    - '3'
-    - '4'
-    - '5'
-    - '6'
-    - '7'
-    - '8'
-    - '9'
+    - {t: '2', s: '"'}
+    - {t: '3', s: '#'}
+    - {t: '4', s: €}
+    - {t: '5', s: '%'}
+    - {t: '6', s: '&'}
+    - {t: '7', s: /}
+    - {t: '8', s: (}
+    - {t: '9', s: )}
   - - {t: '0', s: '='}
     - {t: '$$mdi:backspace$$', type: backspace}
-    - LCTL
+    - $$mdi:apple-keyboard-control$$
     - ''
     - <
     - '>'
     - {t: +, s: '?'}
-    - ¨
+    - {t: ¨, s: ^}
     - $$mdi:arrow-left-bold$$
     - $$mdi:arrow-down-bold$$
-  - ['$$mdi:arrow-up-bold$$', '$$mdi:arrow-right-bold$$', Å, Å, LSFT, '', '', '', '', '']
+  - ['$$mdi:arrow-up-bold$$', '$$mdi:arrow-right-bold$$', Å, Å, '$$mdi:apple-keyboard-shift$$', '', '', '', '', '']
   - - Ö
     - Ä
     - Å
@@ -64,32 +64,41 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - SPC
-    - ENT
+    - {t: '$$mdi:keyboard-return$$', type: enter}
   - - {type: held}
     - {t: ▽, type: trans}
   L2:
-  - ['$$mdi:keyboard-tab$$', '', '7', '8', '9', '', '', '', Å, '']
+  - - $$mdi:keyboard-tab$$
+    - ''
+    - {t: '7', s: /}
+    - {t: '8', s: (}
+    - {t: '9', s: )}
+    - ''
+    - ''
+    - ''
+    - Å
+    - ''
   - - Å
     - {t: '$$mdi:backspace$$', type: backspace}
-    - LCTL
+    - $$mdi:apple-keyboard-control$$
     - ''
-    - '4'
-    - '5'
-    - '6'
-    - MACRO(0)
+    - {t: '4', s: €}
+    - {t: '5', s: '%'}
+    - {t: '6', s: '&'}
+    - MCRO 0
     - ''
     - Ö
   - - Ä
     - Ö
     - Ä
     - ''
-    - LSFT
+    - $$mdi:apple-keyboard-shift$$
     - ''
     - {t: '1', s: '!'}
-    - '2'
-    - '3'
+    - {t: '2', s: '"'}
+    - {t: '3', s: '#'}
     - ''
-  - - MACRO(1)
+  - - MCRO 1
     - ''
     - ''
     - ''
@@ -98,7 +107,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: SPC, h: L2}
-    - {t: ENT, type: held}
+    - {t: '$$mdi:keyboard-return$$', type: held}
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   L3:
@@ -114,6 +123,6 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: SPC, type: held}
-    - ENT
+    - {t: '$$mdi:keyboard-return$$', type: enter}
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}

@@ -40,7 +40,17 @@ parse_config:
   preprocess: true
   skip_binding_parsing: false
   raw_binding_map: {
-    "S(KC_GRV)": ">"
+    "S(KC_GRV)": ">",
+    "MACRO(0)": "MCRO 0",
+    "MACRO(1)": "MCRO 1",
+    "MACRO(2)": "MCRO 2",
+    "MACRO(3)": "MCRO 3",
+    "MACRO(4)": "MCRO 4",
+    "MACRO(5)": "MCRO 5",
+    "MACRO(6)": "MCRO 6",
+    "MACRO(7)": "MCRO 7",
+    "MACRO(8)": "MCRO 8",
+    "MACRO(9)": "MCRO 9",
   }
   sticky_label: sticky
   toggle_label: toggle
@@ -67,37 +77,91 @@ parse_config:
     '1':
       tap: 1
       shifted: '!'
+    '2':
+      tap: 2
+      shifted: '"'
+    '3':
+      tap: 3
+      shifted: '#'
+    '4':
+      tap: 4
+      shifted: €
+    '5':
+      tap: 5
+      shifted: '%'
+    '6':
+      tap: 6
+      shifted: '&'
+    '7':
+      tap: 7
+      shifted: '/'
+    '8':
+      tap: 8
+      shifted: '('
+    '9':
+      tap: 9
+      shifted: ')'
     '0':
       tap: 0
       shifted: '='
     # custom changes to adapt to swedish/ISO
-    BSLS: ''''
-    BACKSLASH: ''''
+    BSLS:
+      tap: ''''
+      shifted: '*'
+    BACKSLASH: 
+      tap: ''''
+      shifted: '*'
     LEFT_BRACKET: 'Å'
     LBRC: 'Å'
     SEMICOLON: 'Ö'
     SCLN: 'Ö'
     QUOTE: 'Ä'
     QUOT: 'Ä'
-    SLASH: '-'
-    SLSH: '-'
+    SLASH:
+      tap: '-'
+      shifted: '__'
+    SLSH:
+      tap: '-'
+      shifted: '__'
     GRAVE: '<'
     GRV: '<'
-    EQUAL: 
+    EQUAL:
       tap: "´"
       shifted: "`"
-    EQL: 
+    EQL:
       tap: "´"
       shifted: "`"
-    MINUS: 
+    MINUS:
       tap: '+'
       shifted: '?'
-    MINS: 
+    MINS:
       tap: '+'
       shifted: '?'
-    RIGHT_BRACKET: '¨'
-    RBRC: '¨'
-    # icons
+    RIGHT_BRACKET:
+      tap: '¨'
+      shifted: '^'
+    RBRC:
+      tap: '¨'
+      shifted: '^'
+    COMMA:
+      tap: ','
+      shifted: ';'
+    COMM:
+      tap: ','
+      shifted: ';'
+    DOT:
+      tap: .
+      shifted: ':'
+    # modifiers
+    LCTL: $$mdi:apple-keyboard-control$$
+    LALT: $$mdi:apple-keyboard-option$$
+    LSHIFT: $$mdi:apple-keyboard-shift$$
+    LSFT: $$mdi:apple-keyboard-shift$$
+    LGUI: $$mdi:apple-keyboard-command$$
+    # navigation
+    ENT:
+      type: enter
+      tap: $$mdi:keyboard-return$$
     TAB: $$mdi:keyboard-tab$$
     BACKSPACE:
       type: backspace
@@ -112,6 +176,7 @@ parse_config:
     UP: $$mdi:arrow-up-bold$$
     DOWN: $$mdi:arrow-down-bold$$
 
+    # media
     MPLY: $$mdi:play-pause$$
     MPRV: $$mdi:skip-previous$$
     MNXT: $$mdi:skip-next$$
@@ -125,9 +190,6 @@ parse_config:
     'NO': ''
     NONUS_HASH: '#'
     NUHS: '#'
-    COMMA: ','
-    COMM: ','
-    DOT: .
     TILDE: '~'
     TILD: '~'
     EXCLAIM: '!'
