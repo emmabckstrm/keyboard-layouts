@@ -34,7 +34,7 @@ layers:
     - {t: '$$mdi:keyboard-return$$', h: L2}
   - [L1, ESC]
   L1:
-  - - {t: +, s: '?'}
+  - - $$mdi:keyboard-tab$$
     - {t: '1', s: '!'}
     - {t: '2', s: '"'}
     - {t: '3', s: '#'}
@@ -54,13 +54,13 @@ layers:
     - {t: ¨, s: ^}
     - $$mdi:arrow-left-bold$$
     - $$mdi:arrow-down-bold$$
-  - ['$$mdi:arrow-up-bold$$', '$$mdi:arrow-right-bold$$', Å, Å, '$$mdi:apple-keyboard-shift$$', '', '', '', '', '']
+  - ['$$mdi:arrow-up-bold$$', '$$mdi:arrow-right-bold$$', '', '', '$$mdi:apple-keyboard-shift$$', '', '', '', '', MCRO 0]
   - - Ö
     - Ä
     - Å
-    - Ö
-    - Ä
-    - Ä
+    - ''
+    - ''
+    - ''
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - SPC
